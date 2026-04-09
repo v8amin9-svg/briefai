@@ -14,13 +14,13 @@ export default function Header({ activeTab, setActiveTab, activeTopic, setActive
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [now, setNow] = useState('');
-  const [nextRefresh, setNextRefresh] = useState(120);
+  const [nextRefresh, setNextRefresh] = useState(30);
   const inputRef = useRef(null);
 
   useEffect(() => {
     const tick = () => {
       setNow(new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }));
-      setNextRefresh((p) => (p <= 1 ? 120 : p - 1));
+      setNextRefresh((p) => (p <= 1 ? 30 : p - 1));
     };
     tick();
     const id = setInterval(tick, 60000);

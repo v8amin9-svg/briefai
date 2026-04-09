@@ -131,6 +131,13 @@ export default function App() {
     const id = setInterval(fetchNews, AUTO_REFRESH_MS);
     return () => clearInterval(id);
   }, [fetchNews]);
+
+  // Keep backend awake (Render free tier sleeps after 15 min)
+  useEffect(() => {
+    const ping = () => fetch(`${API}/`).catch(() => {});
+    const id = setInterval(ping, 10 * 60 * 1000); // every 10 minutes
+    return () => clearInterval(id);
+  }, []);
   useEffect(() => {
     if (activeTab === 1 && !perspectives && !perspectivesLoading) fetchPerspectives();
   }, [activeTab, perspectives, perspectivesLoading, fetchPerspectives]);
