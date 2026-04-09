@@ -164,7 +164,7 @@ export default function App() {
         breakingNews={breakingNews}
       />
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '16px' }}>
+      <div className="main-content" style={{ maxWidth: 1280, margin: '0 auto', padding: '16px' }}>
 
         {/* ── ARTICLE READER (overlays current tab content) ── */}
         {articleToRead && (
@@ -181,7 +181,7 @@ export default function App() {
             {newsError && <ErrorBlock message={newsError} onRetry={fetchNews} />}
 
             {newsLoading && (
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr 1fr', gap: 20 }}>
+              <div className="layout-3col">
                 <div>{[...Array(8)].map((_, i) => <div key={i} style={{ marginBottom: 14 }}><Shimmer h={10} w="50%" mb={4} /><Shimmer h={14} /><Shimmer h={14} w="80%" mb={0} /></div>)}</div>
                 <div><Shimmer h={240} mb={12} /><Shimmer h={16} mb={8} /><Shimmer h={13} /><Shimmer h={13} w="70%" /></div>
                 <div>{[...Array(5)].map((_, i) => <div key={i} style={{ marginBottom: 12 }}><Shimmer h={12} w="30%" mb={4} /><Shimmer h={14} /></div>)}</div>
@@ -189,10 +189,10 @@ export default function App() {
             )}
 
             {!newsLoading && news && (
-              <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '240px 1fr 240px', gap: 20 }}>
+              <div className="fade-up layout-3col">
 
                 {/* LEFT: Just In headlines */}
-                <div style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px 14px', alignSelf: 'start' }}>
+                <div className="sidebar-panel" style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px 14px', alignSelf: 'start' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 12, paddingBottom: 10, borderBottom: '2px solid var(--brand-red)' }}>
                     <span style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'var(--brand-red)', display: 'inline-block', animation: 'pulse-dot 1.2s infinite', flexShrink: 0 }} />
                     <span style={{ fontSize: 12, fontWeight: 900, textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--brand-red)' }}>Just In</span>
@@ -222,8 +222,24 @@ export default function App() {
                   })}
                 </div>
 
+                {/* MOBILE ONLY: Trending strip shown below main content on small screens */}
+                <div className="mobile-trending" style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px' }}>
+                  <SectionLabel title="Trending Now" color="var(--brand-red)" />
+                  {trending.map((a, i) => (
+                    <div key={i} onClick={() => openArticle(a, a.topic)}
+                      style={{ display: 'flex', gap: 8, padding: '8px 0', borderBottom: '1px solid var(--border)', alignItems: 'flex-start', cursor: 'pointer' }}>
+                      <span style={{ fontWeight: 900, fontSize: 18, color: i < 3 ? 'var(--brand-red)' : '#e0e0e0', lineHeight: 1, minWidth: 22, flexShrink: 0 }}>{i + 1}</span>
+                      <div>
+                        <span style={{ fontSize: 9, fontWeight: 700, color: TOPIC_COLOR[a.topic] || '#999', textTransform: 'uppercase' }}>{a.topic}</span>
+                        <p style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.4, marginTop: 2 }}>{a.title}</p>
+                        <span style={{ fontSize: 10, color: 'var(--brand-red)', fontWeight: 700 }}>🔥 {a.trending_score}/10</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
                 {/* RIGHT: Trending + Bias + Perspectives teaser */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 16, alignSelf: 'start' }}>
+                <div className="sidebar-panel" style={{ display: 'flex', flexDirection: 'column', gap: 16, alignSelf: 'start' }}>
                   {/* Trending */}
                   <div style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px 14px' }}>
                     <SectionLabel title="Trending Now" color="var(--brand-red)" />
@@ -269,7 +285,7 @@ export default function App() {
 
         {/* ── PERSPECTIVES ── */}
         {!articleToRead && activeTab === 1 && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 240px', gap: 20, alignItems: 'start' }}>
+          <div className="layout-2col">
             <div style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '18px 20px' }}>
               <div style={{ marginBottom: 20, paddingBottom: 14, borderBottom: '2px solid var(--border)' }}>
                 <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 900, color: 'var(--text-primary)' }}>Same Story, Different Perspectives</h2>
@@ -285,7 +301,7 @@ export default function App() {
                 </div>
               )}
             </div>
-            <div style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px' }}>
+            <div className="sidebar-panel" style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px' }}>
               <BiasWidget articles={allArticles} />
             </div>
           </div>
@@ -293,7 +309,7 @@ export default function App() {
 
         {/* ── TIMELINE ── */}
         {!articleToRead && activeTab === 2 && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 240px', gap: 20, alignItems: 'start' }}>
+          <div className="layout-2col">
             <div style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '18px 20px' }}>
               <div style={{ marginBottom: 20, paddingBottom: 14, borderBottom: '2px solid var(--border)' }}>
                 <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 900, color: 'var(--text-primary)' }}>Story Evolution</h2>
@@ -301,7 +317,7 @@ export default function App() {
               </div>
               <Timeline />
             </div>
-            <div style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px' }}>
+            <div className="sidebar-panel" style={{ backgroundColor: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: 3, padding: '14px' }}>
               <SectionLabel title="Trending Now" color="var(--brand-red)" />
               {trending.slice(0, 5).map((a, i) => (
                 <div key={i} onClick={() => openArticle(a, a.topic)}

@@ -109,7 +109,7 @@ export default function Header({ activeTab, setActiveTab, mode, cacheAge, onRefr
       </div>
 
       {/* ── Sub-nav topic filters ── */}
-      <div style={{ backgroundColor: 'var(--bg-light)', borderBottom: '1px solid var(--border)' }}>
+      <div className="header-subnav" style={{ backgroundColor: 'var(--bg-light)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', gap: 0, overflowX: 'auto', height: 34 }}>
           {TOPIC_FILTERS.map((f, i) => (
             <button key={i} onClick={() => setActiveTab(0)} style={{

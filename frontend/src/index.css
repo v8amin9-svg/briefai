@@ -79,3 +79,43 @@ a { text-decoration: none; color: inherit; }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #f5f5f5; }
 ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+/* ── Mobile-only trending strip (hidden on desktop) ── */
+.mobile-trending { display: none; }
+
+/* ── Responsive grid layouts ── */
+.layout-3col {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  gap: 20px;
+}
+.layout-2col {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .layout-3col,
+  .layout-2col {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-panel {
+    display: none;
+  }
+  .header-subnav {
+    display: none;
+  }
+  .main-content {
+    padding: 10px !important;
+  }
+  /* Tighter card padding on mobile */
+  .mobile-card-pad {
+    padding: 14px 14px !important;
+  }
+  /* Show mobile-only trending */
+  .mobile-trending {
+    display: block;
+  }
+}
