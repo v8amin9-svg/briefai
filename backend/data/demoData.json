@@ -1,0 +1,367 @@
+{
+  "analyzed": {
+    "AI & Tech": [
+      {
+        "title": "OpenAI Releases GPT-5 with Breakthrough Reasoning Capabilities",
+        "description": "OpenAI has unveiled GPT-5, claiming it surpasses human experts in complex reasoning tasks across science, law, and medicine.",
+        "url": "https://example.com/openai-gpt5",
+        "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+        "source": "TechCrunch",
+        "publishedAt": "2026-04-07T09:00:00Z",
+        "summary": "OpenAI launched GPT-5, a major AI model that demonstrates human-level reasoning across professional domains. The model was tested on bar exams, medical boards, and physics benchmarks, outperforming human experts. This marks a significant milestone in the race toward artificial general intelligence.",
+        "political_leaning": "Neutral",
+        "region_focus": "North America",
+        "country_bias": "US",
+        "tone": "Promotional",
+        "trending_score": 9,
+        "read_time_saved": 4
+      },
+      {
+        "title": "EU AI Act Enforcement Begins: Major Tech Firms Face Compliance Audits",
+        "description": "The European Union has begun enforcing its landmark AI Act, with regulators launching audits of AI systems used by Google, Meta, and Microsoft.",
+        "url": "https://example.com/eu-ai-act",
+        "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80",
+        "source": "The Guardian",
+        "publishedAt": "2026-04-06T14:00:00Z",
+        "summary": "The EU AI Act is now in full force, requiring major tech companies to demonstrate that their high-risk AI systems meet transparency and safety standards. Google, Meta, and Microsoft are among the first to face compliance audits. Companies face fines of up to 3% of global revenue for violations.",
+        "political_leaning": "Centre",
+        "region_focus": "Europe",
+        "country_bias": "Neutral",
+        "tone": "Investigative",
+        "trending_score": 8,
+        "read_time_saved": 3
+      },
+      {
+        "title": "AI-Powered Drug Discovery Cuts Clinical Trial Time by 60%",
+        "description": "A new AI platform developed by DeepMind and pharmaceutical partners has dramatically reduced the time needed to identify viable drug candidates.",
+        "url": "https://example.com/ai-drug-discovery",
+        "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "source": "MIT Technology Review",
+        "publishedAt": "2026-04-05T11:00:00Z",
+        "summary": "DeepMind's new AI drug discovery platform has reduced the preclinical phase of drug development from years to months. The system analyzes protein structures and predicts drug interactions with unprecedented accuracy. Pharmaceutical companies are racing to license the technology to stay competitive.",
+        "political_leaning": "Neutral",
+        "region_focus": "Global",
+        "country_bias": "Neutral",
+        "tone": "Promotional",
+        "trending_score": 7,
+        "read_time_saved": 3
+      }
+    ],
+    "Wars & Conflicts": [
+      {
+        "title": "Ceasefire Talks Resume in Gaza After Three-Week Pause",
+        "description": "Diplomatic negotiations for a ceasefire in Gaza have restarted in Cairo, with Qatar and Egypt acting as mediators between Israel and Hamas.",
+        "url": "https://example.com/gaza-ceasefire",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80",
+        "source": "Al Jazeera",
+        "publishedAt": "2026-04-07T08:00:00Z",
+        "summary": "Ceasefire negotiations for the Gaza conflict have resumed in Cairo after a three-week breakdown. Qatar and Egypt are mediating talks between Israeli officials and Hamas representatives. A temporary truce allowing humanitarian aid is being discussed as a first step toward a broader agreement.",
+        "political_leaning": "Centre",
+        "region_focus": "Middle East",
+        "country_bias": "Neutral",
+        "tone": "Neutral",
+        "trending_score": 10,
+        "read_time_saved": 3
+      },
+      {
+        "title": "Ukraine Receives New Western Air Defense Systems Amid Escalating Attacks",
+        "description": "NATO allies have delivered advanced Patriot missile batteries to Ukraine as Russian missile strikes on civilian infrastructure intensify.",
+        "url": "https://example.com/ukraine-defense",
+        "image": "https://images.unsplash.com/photo-1580128660010-fd027e1e587a?w=800&q=80",
+        "source": "Reuters",
+        "publishedAt": "2026-04-06T12:00:00Z",
+        "summary": "Ukraine has received a significant shipment of Patriot air defense systems from NATO allies following weeks of intensive Russian missile attacks on power grids and cities. The delivery represents the largest single military aid package since the war began. Ukrainian officials say the systems will be deployed immediately to protect major urban centers.",
+        "political_leaning": "Centre",
+        "region_focus": "Eastern Europe",
+        "country_bias": "Neutral",
+        "tone": "Alarming",
+        "trending_score": 9,
+        "read_time_saved": 4
+      },
+      {
+        "title": "Sudan Civil War: Over 10 Million Displaced in Largest Refugee Crisis Since WWII",
+        "description": "The UN reports that Sudan's civil war has displaced more than 10 million people, creating the world's worst displacement crisis since World War II.",
+        "url": "https://example.com/sudan-crisis",
+        "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&q=80",
+        "source": "BBC News",
+        "publishedAt": "2026-04-05T16:00:00Z",
+        "summary": "The UN has declared Sudan's displacement crisis the largest since World War II, with over 10 million people forced from their homes since fighting began between the Sudanese Armed Forces and the Rapid Support Forces. Aid organizations report catastrophic shortages of food, water, and medicine in conflict zones. International calls for a ceasefire have been largely ignored by both parties.",
+        "political_leaning": "Neutral",
+        "region_focus": "Africa",
+        "country_bias": "Neutral",
+        "tone": "Alarming",
+        "trending_score": 8,
+        "read_time_saved": 4
+      }
+    ],
+    "Politics": [
+      {
+        "title": "US Senate Passes Historic Climate and Infrastructure Bill",
+        "description": "The US Senate passed a sweeping $800 billion climate and infrastructure package with bipartisan support, the largest climate investment in American history.",
+        "url": "https://example.com/us-climate-bill",
+        "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80",
+        "source": "The New York Times",
+        "publishedAt": "2026-04-07T20:00:00Z",
+        "summary": "The US Senate passed an $800 billion climate and infrastructure bill with surprising bipartisan support, including investments in clean energy, electric vehicle infrastructure, and grid modernization. The legislation is considered the most significant climate action in US history. It now moves to the House, where passage is expected but not guaranteed.",
+        "political_leaning": "Centre",
+        "region_focus": "North America",
+        "country_bias": "US",
+        "tone": "Neutral",
+        "trending_score": 9,
+        "read_time_saved": 4
+      },
+      {
+        "title": "UK General Election Called for June: Labour Holds Strong Lead",
+        "description": "The British Prime Minister has called a snap general election for June, with polls showing the Labour Party ahead by 15 points.",
+        "url": "https://example.com/uk-election",
+        "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80",
+        "source": "Financial Times",
+        "publishedAt": "2026-04-06T09:00:00Z",
+        "summary": "The UK Prime Minister has called a snap general election for June, surprising political observers who expected a later date. Labour Party holds a 15-point lead in current polling, suggesting a significant shift in British politics. The election will focus on issues of cost of living, the NHS, and post-Brexit trade relationships.",
+        "political_leaning": "Centre",
+        "region_focus": "Europe",
+        "country_bias": "UK",
+        "tone": "Neutral",
+        "trending_score": 8,
+        "read_time_saved": 3
+      },
+      {
+        "title": "India's BJP Faces Mounting Opposition Ahead of State Elections",
+        "description": "Prime Minister Modi's BJP party is facing a coordinated opposition challenge across five key states in upcoming elections.",
+        "url": "https://example.com/india-elections",
+        "image": "https://images.unsplash.com/photo-1567593810070-7a3d471af022?w=800&q=80",
+        "source": "Hindustan Times",
+        "publishedAt": "2026-04-05T07:00:00Z",
+        "summary": "India's ruling BJP party is facing its strongest opposition challenge in a decade ahead of elections in five key states. A coalition of opposition parties has unified behind shared candidates for the first time. Economic concerns, unemployment, and agricultural policy are driving voter dissatisfaction in rural areas.",
+        "political_leaning": "Centre",
+        "region_focus": "Asia",
+        "country_bias": "India",
+        "tone": "Investigative",
+        "trending_score": 7,
+        "read_time_saved": 3
+      }
+    ],
+    "Business & Economy": [
+      {
+        "title": "Federal Reserve Signals Three Rate Cuts Possible in 2026",
+        "description": "Federal Reserve Chair Jerome Powell indicated the Fed is prepared to cut interest rates three times in 2026 if inflation continues its downward trend.",
+        "url": "https://example.com/fed-rates",
+        "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+        "source": "Wall Street Journal",
+        "publishedAt": "2026-04-07T18:00:00Z",
+        "summary": "Federal Reserve Chair Jerome Powell signaled that the Fed could cut interest rates up to three times in 2026, contingent on continued progress on inflation. Markets reacted positively, with the S&P 500 rising 1.4% on the news. Economists caution that strong labor market data could delay the first cut until Q3.",
+        "political_leaning": "Neutral",
+        "region_focus": "North America",
+        "country_bias": "US",
+        "tone": "Neutral",
+        "trending_score": 9,
+        "read_time_saved": 3
+      },
+      {
+        "title": "NVIDIA Market Cap Crosses $4 Trillion on AI Chip Demand",
+        "description": "NVIDIA became the first company in history to reach a $4 trillion market capitalization, driven by insatiable demand for its AI processing chips.",
+        "url": "https://example.com/nvidia-4trillion",
+        "image": "https://images.unsplash.com/photo-1591405351990-4726e331f141?w=800&q=80",
+        "source": "Bloomberg",
+        "publishedAt": "2026-04-06T15:00:00Z",
+        "summary": "NVIDIA crossed the $4 trillion market cap milestone, becoming the most valuable company in history by that measure. The chip maker's dominance in AI processing hardware has fueled relentless demand from data centers and tech giants. Analysts debate whether the valuation is sustainable given new competition from AMD and custom chips from Apple and Google.",
+        "political_leaning": "Neutral",
+        "region_focus": "North America",
+        "country_bias": "US",
+        "tone": "Promotional",
+        "trending_score": 8,
+        "read_time_saved": 3
+      },
+      {
+        "title": "China's Economy Grows 6.2% in Q1, Beating Forecasts",
+        "description": "China reported stronger-than-expected GDP growth of 6.2% in the first quarter, driven by exports and manufacturing output.",
+        "url": "https://example.com/china-gdp",
+        "image": "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&q=80",
+        "source": "South China Morning Post",
+        "publishedAt": "2026-04-05T05:00:00Z",
+        "summary": "China reported Q1 GDP growth of 6.2%, surpassing analysts' forecasts of 5.8% and suggesting the economy is recovering faster than expected. Export-driven manufacturing and a surge in electric vehicle production were the main growth drivers. Western economists note that property sector weakness remains a significant risk to sustained growth.",
+        "political_leaning": "Centre",
+        "region_focus": "Asia",
+        "country_bias": "China",
+        "tone": "Neutral",
+        "trending_score": 8,
+        "read_time_saved": 3
+      }
+    ]
+  },
+  "perspectives": {
+    "AI & Tech": {
+      "story_title": "Global regulators and companies clash over the pace and safety of AI development",
+      "perspectives": [
+        {
+          "source": "TechCrunch",
+          "region": "US 🇺🇸",
+          "angle": "TechCrunch frames the AI regulation debate as a potential brake on American innovation, emphasizing how regulations could slow US competitiveness against China. The piece highlights startup founders who warn that heavy-handed rules will push investment overseas.",
+          "bias": "Right"
+        },
+        {
+          "source": "The Guardian",
+          "region": "Europe 🇪🇺",
+          "angle": "The Guardian presents the EU AI Act as a necessary and proportionate response to real dangers posed by unregulated AI systems. The article gives extensive voice to civil society groups and academics who argue that corporate self-regulation has failed.",
+          "bias": "Left"
+        },
+        {
+          "source": "South China Morning Post",
+          "region": "Asia 🌏",
+          "angle": "SCMP frames the Western AI regulation debate as an opportunity for China to attract global AI talent and investment. The piece notes that China's own AI governance model prioritizes national development goals over individual rights.",
+          "bias": "Centre"
+        }
+      ],
+      "key_difference": "The US source fears regulation will harm innovation, the European source sees it as essential protection, while the Asian source views the entire Western debate as an opening for geopolitical competition."
+    },
+    "Wars & Conflicts": {
+      "story_title": "Ceasefire negotiations in Gaza falter as humanitarian crisis deepens",
+      "perspectives": [
+        {
+          "source": "Reuters",
+          "region": "US/International 🇺🇸",
+          "angle": "Reuters presents a balanced account of the stalled talks, emphasizing the procedural obstacles and the role of US mediators. The piece is careful to present both Israeli security concerns and Palestinian civilian casualty figures without editorializing.",
+          "bias": "Neutral"
+        },
+        {
+          "source": "BBC News",
+          "region": "Europe 🇬🇧",
+          "angle": "The BBC leads with the humanitarian crisis in Gaza, featuring detailed accounts of hospital conditions and food shortages. The article places heavier emphasis on international law obligations and the positions of European governments calling for an immediate ceasefire.",
+          "bias": "Centre"
+        },
+        {
+          "source": "Al Jazeera",
+          "region": "Middle East 🌍",
+          "angle": "Al Jazeera provides extensive on-the-ground reporting from Gaza, centering Palestinian civilian voices and experiences. The coverage is more explicitly critical of Israeli military operations and frames the conflict primarily through a humanitarian and historical lens.",
+          "bias": "Left"
+        }
+      ],
+      "key_difference": "Reuters focuses on diplomatic process, BBC emphasizes European-framed humanitarian law, while Al Jazeera centers Palestinian civilian experience and is most critical of Israeli military conduct."
+    },
+    "Politics": {
+      "story_title": "Western democracies face rising political instability ahead of major elections",
+      "perspectives": [
+        {
+          "source": "The New York Times",
+          "region": "US 🇺🇸",
+          "angle": "The NYT frames global political instability through the lens of American domestic politics, drawing parallels between populist movements in Europe and the US. The analysis focuses on economic anxiety as the root cause of voter discontent.",
+          "bias": "Centre"
+        },
+        {
+          "source": "The Guardian",
+          "region": "Europe 🇬🇧",
+          "angle": "The Guardian presents political instability as a product of deliberate disinformation campaigns and the failure of conservative governments to address inequality. The piece features extensive commentary from progressive political scientists.",
+          "bias": "Left"
+        },
+        {
+          "source": "Hindustan Times",
+          "region": "Asia 🇮🇳",
+          "angle": "The Hindustan Times views Western political instability with a degree of detachment, framing it as evidence that liberal democratic models are under stress. The analysis suggests Asian democracies may be more resilient due to stronger institutional traditions.",
+          "bias": "Centre"
+        }
+      ],
+      "key_difference": "The US source roots instability in economic anxiety, the European source blames disinformation and inequality policy failures, while the Asian source frames Western political turmoil as systemic rather than incidental."
+    },
+    "Business & Economy": {
+      "story_title": "US Federal Reserve signals rate cuts as global economic outlook improves",
+      "perspectives": [
+        {
+          "source": "Wall Street Journal",
+          "region": "US 🇺🇸",
+          "angle": "The WSJ presents the Fed's rate cut signals as long overdue relief for businesses and investors who have struggled under high borrowing costs. The article leads with market reactions and interviews with financial executives.",
+          "bias": "Right"
+        },
+        {
+          "source": "Financial Times",
+          "region": "Europe 🇬🇧",
+          "angle": "The FT takes a more cautious tone, warning that premature rate cuts could reignite inflation and undermine the credibility of central banks. The piece gives significant space to economists who question whether the Fed is making a politically motivated decision.",
+          "bias": "Centre"
+        },
+        {
+          "source": "South China Morning Post",
+          "region": "Asia 🌏",
+          "angle": "SCMP focuses on how US rate cuts will affect capital flows to Asian markets, particularly the impact on currencies and bond yields across the region. The analysis frames the Fed's decision primarily through its consequences for emerging market economies.",
+          "bias": "Neutral"
+        }
+      ],
+      "key_difference": "The US source celebrates rate cuts as market relief, the European source warns of inflation risks and political motivations, while the Asian source analyzes the downstream effects on emerging markets."
+    }
+  },
+  "timeline": {
+    "wars": {
+      "story_topic": "The Gaza conflict and ceasefire negotiations over the past 7 days",
+      "timeline": [
+        {
+          "date": "2026-04-01",
+          "headline": "Ceasefire talks collapse in Doha",
+          "development": "Negotiations broke down after Israel and Hamas failed to agree on the release of hostages, with both sides blaming the other for the impasse.",
+          "significance": "High"
+        },
+        {
+          "date": "2026-04-02",
+          "headline": "Intensified airstrikes reported in northern Gaza",
+          "development": "Following the breakdown of talks, Israeli forces conducted airstrikes on targets in northern Gaza, with Palestinian health authorities reporting significant casualties.",
+          "significance": "High"
+        },
+        {
+          "date": "2026-04-04",
+          "headline": "Egypt proposes new mediation framework",
+          "development": "Egyptian officials introduced a revised mediation proposal that would separate the hostage release from the broader ceasefire agreement to unblock negotiations.",
+          "significance": "Medium"
+        },
+        {
+          "date": "2026-04-05",
+          "headline": "Hamas signals openness to Egyptian proposal",
+          "development": "Hamas leadership issued a statement expressing conditional support for the Egyptian framework, while demanding guarantees about the volume of humanitarian aid.",
+          "significance": "High"
+        },
+        {
+          "date": "2026-04-07",
+          "headline": "Talks resume in Cairo with new momentum",
+          "development": "Formal negotiations resumed in Cairo with representatives from Israel, Hamas, Qatar, and Egypt, with mediators expressing cautious optimism about a temporary truce.",
+          "significance": "High"
+        }
+      ],
+      "current_status": "Ceasefire negotiations are active in Cairo with cautious optimism about a temporary truce, though significant gaps remain between the parties.",
+      "trajectory": "De-escalating"
+    },
+    "ai-tech": {
+      "story_topic": "The race to deploy advanced AI models and navigate global regulatory pressure",
+      "timeline": [
+        {
+          "date": "2026-04-01",
+          "headline": "EU announces first AI Act enforcement actions",
+          "development": "The European Commission notified Google and Meta that their AI systems are under formal review for compliance with the EU AI Act's transparency requirements.",
+          "significance": "High"
+        },
+        {
+          "date": "2026-04-03",
+          "headline": "OpenAI previews GPT-5 capabilities to selected researchers",
+          "development": "OpenAI shared early access to GPT-5 with a group of academic researchers, who published initial findings showing exceptional performance on reasoning benchmarks.",
+          "significance": "Medium"
+        },
+        {
+          "date": "2026-04-05",
+          "headline": "China's Baidu releases Ernie 5.0 to challenge Western AI",
+          "development": "Baidu launched Ernie 5.0, claiming performance comparable to GPT-4 on Chinese language tasks, intensifying the global AI competition.",
+          "significance": "Medium"
+        },
+        {
+          "date": "2026-04-06",
+          "headline": "US Senate holds emergency hearing on AI safety",
+          "development": "Senators grilled leading AI executives on safety protocols and the pace of deployment, with several lawmakers calling for a mandatory pause on the most powerful AI systems.",
+          "significance": "High"
+        },
+        {
+          "date": "2026-04-07",
+          "headline": "OpenAI officially launches GPT-5 to the public",
+          "development": "GPT-5 became available to ChatGPT subscribers worldwide, immediately breaking usage records and reigniting the debate about AI regulation and societal impact.",
+          "significance": "High"
+        }
+      ],
+      "current_status": "GPT-5 is now publicly available and setting usage records while regulators in the US and EU scramble to assess its implications.",
+      "trajectory": "Escalating"
+    }
+  },
+  "mode": "DEMO"
+}
