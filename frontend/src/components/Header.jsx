@@ -10,7 +10,7 @@ const TABS = [
 
 const TOPIC_FILTERS = ['All', 'AI & Tech', 'Wars & Conflicts', 'Politics', 'Business & Economy'];
 
-export default function Header({ activeTab, setActiveTab, mode, cacheAge, onRefresh, loading, breakingNews = [] }) {
+export default function Header({ activeTab, setActiveTab, activeTopic, setActiveTopic, mode, cacheAge, onRefresh, loading, breakingNews = [] }) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [now, setNow] = useState('');
@@ -111,19 +111,23 @@ export default function Header({ activeTab, setActiveTab, mode, cacheAge, onRefr
       {/* ── Sub-nav topic filters ── */}
       <div className="header-subnav" style={{ backgroundColor: 'var(--bg-light)', borderBottom: '1px solid var(--border)' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', gap: 0, overflowX: 'auto', height: 34 }}>
-          {TOPIC_FILTERS.map((f, i) => (
-            <button key={i} onClick={() => setActiveTab(0)} style={{
-              fontSize: 11, fontWeight: 600, padding: '0 14px', height: '100%',
-              color: i === 0 ? 'var(--brand-red)' : 'var(--text-secondary)',
-              backgroundColor: 'transparent', border: 'none', cursor: 'pointer',
-              borderRight: '1px solid var(--border)', whiteSpace: 'nowrap',
-              fontFamily: 'var(--font-body)', textTransform: 'uppercase', letterSpacing: '0.4px',
-            }}
-              onMouseEnter={e => e.currentTarget.style.color = 'var(--brand-red)'}
-              onMouseLeave={e => { if (i !== 0) e.currentTarget.style.color = 'var(--text-secondary)'; }}>
-              {f}
-            </button>
-          ))}
+          {TOPIC_FILTERS.map((f, i) => {
+            const isActive = activeTopic === f;
+            return (
+              <button key={i} onClick={() => { setActiveTab(0); setActiveTopic(f); }} style={{
+                fontSize: 11, fontWeight: 600, padding: '0 14px', height: '100%',
+                color: isActive ? 'var(--brand-red)' : 'var(--text-secondary)',
+                backgroundColor: 'transparent', border: 'none', cursor: 'pointer',
+                borderRight: '1px solid var(--border)', whiteSpace: 'nowrap',
+                fontFamily: 'var(--font-body)', textTransform: 'uppercase', letterSpacing: '0.4px',
+                borderBottom: isActive ? '2px solid var(--brand-red)' : '2px solid transparent',
+              }}
+                onMouseEnter={e => e.currentTarget.style.color = 'var(--brand-red)'}
+                onMouseLeave={e => { if (!isActive) e.currentTarget.style.color = 'var(--text-secondary)'; }}>
+                {f}
+              </button>
+            );
+          })}
         </div>
       </div>
 

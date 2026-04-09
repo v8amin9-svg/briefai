@@ -68,6 +68,7 @@ function BiasWidget({ articles }) {
 /* ── Main App ── */
 export default function App() {
   const [activeTab, setActiveTab] = useState(0);
+  const [activeTopic, setActiveTopic] = useState('All');
   const [news, setNews] = useState(null);
   const [perspectives, setPerspectives] = useState(null);
   const [mode, setMode] = useState('LIVE');
@@ -143,22 +144,32 @@ export default function App() {
         .sort((a, b) => (b.trending_score || 0) - (a.trending_score || 0))
     : [];
 
+  // Filter by active topic (All = no filter)
+  const filteredArticles = activeTopic === 'All'
+    ? allArticles
+    : allArticles.filter(a => a.topic === activeTopic);
+
+  const filteredNews = activeTopic === 'All'
+    ? news
+    : news ? { [activeTopic]: news[activeTopic] || [] } : null;
+
   const breakingNews = allArticles.slice(0, 8).map(a => a.title);
 
-  // Featured = highest trending
-  const featured = allArticles[0];
+  // Featured = highest trending from filtered set
+  const featured = filteredArticles[0];
   const featuredTopic = featured?.topic;
 
   // Left column: latest headlines (all non-featured, text only)
-  const headlines = allArticles.filter(a => a.title !== featured?.title).slice(0, 10);
+  const headlines = filteredArticles.filter(a => a.title !== featured?.title).slice(0, 10);
 
   // Trending sidebar
-  const trending = allArticles.slice(0, 6);
+  const trending = filteredArticles.slice(0, 6);
 
   return (
     <div style={{ backgroundColor: 'var(--bg-light)', minHeight: '100vh' }}>
       <Header
         activeTab={activeTab} setActiveTab={setActiveTab}
+        activeTopic={activeTopic} setActiveTopic={setActiveTopic}
         mode={mode} cacheAge={cacheAge}
         onRefresh={fetchNews} loading={newsLoading}
         breakingNews={breakingNews}
@@ -207,7 +218,7 @@ export default function App() {
                   {featured && <FeaturedCard article={featured} topic={featuredTopic} onOpen={openArticle} />}
 
                   {/* By topic sections */}
-                  {Object.entries(news).map(([topic, articles]) => {
+                  {Object.entries(filteredNews).map(([topic, articles]) => {
                     const color = TOPIC_COLOR[topic] || 'var(--brand-red)';
                     const filtered = articles.filter(a => a.title !== featured?.title);
                     if (!filtered.length) return null;
