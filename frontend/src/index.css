@@ -99,23 +99,18 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .layout-3col,
   .layout-2col {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .sidebar-panel {
-    display: none;
+    display: none !important;
   }
   .header-subnav {
-    display: none;
+    display: none !important;
   }
   .main-content {
     padding: 10px !important;
   }
-  /* Tighter card padding on mobile */
-  .mobile-card-pad {
-    padding: 14px 14px !important;
-  }
-  /* Show mobile-only trending */
   .mobile-trending {
-    display: block;
+    display: block !important;
   }
 }
